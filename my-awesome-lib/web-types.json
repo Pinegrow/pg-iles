@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json.schemastore.org/web-types",
+  "name": "my-awesome-lib",
+  "framework": "vue",
+  "version": "3.8.11",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "MyIcon",
+          "attributes": [
+            {
+              "name": "name",
+              "customType": "icon",
+              "placeholder": "i-line-md-iconify1"
+            },
+            {
+              "name": "size",
+              "customType": "select",
+              "default": "24px",
+              "options": [
+                "12px",
+                "16px",
+                "20px",
+                "24px",
+                "28px",
+                "32px",
+                "36px"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MyAvatar",
+          "attributes": [
+            {
+              "name": "size",
+              "customType": "select",
+              "default": "sm",
+              "options": [
+                "3xs",
+                "2xs",
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+                "2xl",
+                "3xl"
+              ]
+            },
+            {
+              "name": "chipPosition",
+              "customType": "select",
+              "default": "top-right",
+              "options": [
+                "top-right",
+                "bottom-right",
+                "top-left",
+                "bottom-left"
+              ]
+            },
+            {
+              "name": "chipVariant",
+              "customType": "select",
+              "default": "solid",
+              "options": ["solid"]
+            }
+          ]
+        },
+        {
+          "name": "MyButton",
+          "attributes": [
+            {
+              "name": "size",
+              "customType": "select",
+              "default": "sm",
+              "options": ["2xs", "xs", "sm", "md", "lg", "xl"]
+            },
+            {
+              "name": "variant",
+              "customType": "select",
+              "default": "solid",
+              "options": ["solid", "outline", "soft", "ghost", "link"]
+            },
+            {
+              "name": "target",
+              "customType": "select",
+              "default": "",
+              "options": ["_blank"]
+            }
+          ]
+        },
+        {
+          "name": "MyTooltip",
+          "attributes": []
+        }
+      ],
+      "attributes": [
+        {
+          "name": "color",
+          "customType": "select",
+          "options": []
+        }
+      ]
+    }
+  }
+}

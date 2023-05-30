@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json.schemastore.org/web-types",
+  "name": "project",
+  "framework": "vue",
+  "version": "0.0.0",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "BaseIcon",
+          "attributes": [
+            {
+              "name": "name",
+              "customType": "icon",
+              "placeholder": "i-line-md-iconify1"
+            },
+            {
+              "name": "size",
+              "customType": "select",
+              "default": "24px",
+              "options": [
+                "12px",
+                "16px",
+                "20px",
+                "24px",
+                "28px",
+                "32px",
+                "36px"
+              ]
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": "color",
+          "customType": "select",
+          "options": [
+            "primary",
+            "secondary",
+            "tertiary",
+            "success",
+            "warning",
+            "error",
+            "info"
+          ]
+        }
+      ]
+    }
+  }
+}
