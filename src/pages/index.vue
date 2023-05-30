@@ -1,5 +1,5 @@
 <page>
-    title: Vue Designer
+    title: îles with Vue Designer
 </page>
 <template>
   <main>
