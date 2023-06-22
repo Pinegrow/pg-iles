@@ -29,11 +29,55 @@
               ]
             }
           ]
+        },
+        {
+          "name": "BaseButtonComponent",
+          "attributes": [
+            {
+              "name": "size",
+              "customType": "select",
+              "default": "sm",
+              "options": ["2xs", "xs", "sm", "md", "lg", "xl"]
+            },
+            {
+              "name": "variant",
+              "customType": "select",
+              "default": "solid",
+              "options": ["solid", "outline", "soft", "ghost", "link"]
+            },
+            {
+              "name": "target",
+              "customType": "select",
+              "default": "",
+              "options": ["_blank"]
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "The default Vue slot.",
+              "vue-properties": [
+                {
+                  "name": "disabled",
+                  "description": "Whether or not the Button is disabled.",
+                  "type": "Boolean"
+                }
+              ]
+            },
+            {
+              "name": "leading",
+              "description": "Use the #leading slot to set the content of the leading icon."
+            },
+            {
+              "name": "trailing",
+              "description": "Use the #trailing slot to set the content of the trailing icon."
+            }
+          ]
         }
       ],
       "attributes": [
         {
-          "name": "color",
+          "name": "color-prop",
           "customType": "select",
           "options": [
             "primary",
