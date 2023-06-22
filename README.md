@@ -57,7 +57,7 @@ And you will see the generated file in `dist` that's ready to be served.
 ### Deploy to Netlify
 
 You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pinegrow/pg-iles)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-iles)
 
 Check out the [deployment documentation](https://iles.pages.dev/guide/deployment) for more information.
 
