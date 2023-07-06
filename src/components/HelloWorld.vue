@@ -33,7 +33,7 @@
     <br />
     <h3>
       Visually design your components with Vue Designer -
-      <a href="https://pinegrow.com/vue-designer" target="_blank" rel="noopener"
+      <a href="https://vuedesigner.com" target="_blank" rel="noopener"
         >Try Now</a
       >
     </h3>
