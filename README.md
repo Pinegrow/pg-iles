@@ -87,6 +87,7 @@ Check out the [deployment documentation](https://iles.pages.dev/guide/deployment
 ### Modules/Plugins
 
 - [Pinegrow îles Module](https://www.npmjs.com/package/@pinegrow/iles-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
+- [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
 
 ### Devtools
 
