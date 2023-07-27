@@ -9,6 +9,8 @@ import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 export default defineConfig({
   siteUrl: 'https://pg-iles.netlify.app',
   turbo: true,
+  jsx: 'preact', // 'solid', 'react', 'vue'
+  svelte: true,
   modules: [
     [
       '@pinegrow/iles-module',
