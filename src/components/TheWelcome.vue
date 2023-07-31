@@ -1,7 +1,7 @@
 <template>
   <WelcomeItem>
     <template #icon>
-      <BaseIcon name="i-ic-twotone-menu-book" width="24px" />
+      <BaseIcon name="i-ic-twotone-menu-book" height="24px" />
     </template>
     <template #heading> Documentation </template>
     îles’s
@@ -10,7 +10,7 @@
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
-      <BaseIcon name="i-icon-park-twotone-tool" width="24px" />
+      <BaseIcon name="i-icon-park-twotone-tool" height="24px" />
     </template>
     <template #heading> Tooling </template>
     This project is served and bundled with<a
@@ -24,7 +24,7 @@
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
-      <BaseIcon name="i-ic-twotone-chat-bubble" width="24px" />
+      <BaseIcon name="i-ic-twotone-chat-bubble" height="24px" />
     </template>
     <template #heading> Community </template>
     Got stuck? Ask your question on the

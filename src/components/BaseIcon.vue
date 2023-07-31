@@ -4,7 +4,7 @@
   const props = defineProps({
     name: {
       type: String,
-      default: 'line-md:iconify1',
+      default: 'i-line-md-iconify1',
     },
     tag: {
       type: String,
@@ -31,14 +31,15 @@
   const iconStyle = computed(() => {
     const width = addUnit(props.width) || addUnit(props.height) || '20px'
     const height = addUnit(props.height) || width
+    const display = 'inline-block'
     return {
       width,
       height,
+      display,
     }
   })
 </script>
 <template>
-  <component :is="tag" :class="name" class="inline-block" :style="iconStyle">
-  </component>
+  <component :is="tag" :class="name" :style="iconStyle"> </component>
 </template>
 <style scoped></style>
