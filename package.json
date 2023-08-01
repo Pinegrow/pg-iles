@@ -23,13 +23,13 @@
   "dependencies": {
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
-    "pinia": "^2.0.35",
-    "defu": "^6.1.2"
+    "defu": "^6.1.2",
+    "pinia": "^2.0.35"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.64",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/iles-module": "^3.0.0",
+    "@pinegrow/iles-module": "^3.0.4",
     "@preact/preset-vite": "^2.5.0",
     "@sveltejs/vite-plugin-svelte": "^2.0.4",
     "@unocss/preset-icons": "^0.51.12",
