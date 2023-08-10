@@ -18,6 +18,7 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
     "allowJs": true,
-    "strict": false
+    "strict": false,
+    "include": ["components.d.ts", "auto-imports.d.ts"]
   }
 }

@@ -5,6 +5,7 @@ import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
+import AutoImportAPIs from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   siteUrl: 'https://pg-iles.netlify.app',
@@ -47,6 +48,30 @@ export default defineConfig({
         ],
       }),
       VueDevTools(),
+      // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
+      AutoImportAPIs({
+        include: [
+          /.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+          /.vue$/,
+          /.vue?vue/, // .vue
+          /.md$/, // .md
+        ],
+        imports: [
+          'vue',
+          // 'vue-router',
+          // 'vue-i18n',
+          // 'vue/macros',
+          // '@vueuse/head',
+          // '@vueuse/core',
+          // 'pinia',
+        ],
+        dirs: [
+          // 'src/composables',
+          // 'src/stores',
+        ],
+        vueTemplate: true,
+        dts: 'auto-imports.d.ts',
+      }),
     ],
   },
   //...
