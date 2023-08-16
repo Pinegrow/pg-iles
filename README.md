@@ -86,8 +86,13 @@ Check out the [deployment documentation](https://iles.pages.dev/guide/deployment
 
 ### Modules/Plugins
 
+- [@islands/pages](https://iles.pages.dev/guide/plugins#islandspages) - enables file-based routing, hooks to extend frontmatter and route data, supports a <page> block in Vue single-file components for meta-data. This module is shipped inside îles.
+
 - [Pinegrow îles Module](https://www.npmjs.com/package/@pinegrow/iles-module) - enables you to live-design your Vue single-file components visually in Vue Designer.
+- 📲 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - On-demand components auto importing for Vue.
+- 📲 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Auto import APIs on-demand for Vite, Webpack and Rollup.
 - [VueUse](https://vueuse.org/) - collection of essential Vue composition utilities.
+- 🍍 [Pinia](https://pinia.vuejs.org/) stores for global state management. Its light-weight, type-safe, extensible, modular with vue-devtools support.
 
 ### Devtools
 
