@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'iles'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
-import VueDevTools from 'vite-plugin-vue-devtools'
+// import VueDevTools from 'vite-plugin-vue-devtools'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 
@@ -47,7 +47,7 @@ export default defineConfig({
           }),
         ],
       }),
-      VueDevTools(),
+      // VueDevTools(),
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
       AutoImportAPIs({
         include: [
