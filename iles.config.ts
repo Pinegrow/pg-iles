@@ -9,7 +9,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   siteUrl: 'https://pg-iles.netlify.app',
-  turbo: true,
+  // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
   modules: [
