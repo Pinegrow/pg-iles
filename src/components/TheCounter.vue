@@ -1,19 +1,19 @@
 <script setup lang="ts">
-  const store = useCounterStore()
+  const counterStore = useCounterStore()
 
   /* 1. Pinia store state (ref, reactive, computed, etc) */
 
   // ❌ Bad (unreactive):
-  // const { count, getCount, getDoubleCount } = store
+  // const { count, getCount, getDoubleCount } = counterStore
 
   // ✔️ Good:
-  const { count, getCount } = storeToRefs(store)
+  const { count, getCount } = storeToRefs(counterStore)
 
   // count is reactive
   const getDoubleCount = computed(() => count.value * 2)
 
   /* 2. Pinia store actions */
-  const { increment, decrement } = store
+  const { increment, decrement } = counterStore
 </script>
 
 <template>
