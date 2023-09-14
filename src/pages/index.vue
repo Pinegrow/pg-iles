@@ -2,7 +2,5 @@
     title: îles with Vue Designer
 </page>
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <main>A Fresh Start!</main>
 </template>
