@@ -14,6 +14,15 @@ import { defineApp } from 'iles'
 import { createPinia } from 'pinia'
 import { computed } from 'vue'
 
+const link: any = [
+  {
+    rel: 'icon',
+    type: 'image/x-icon',
+    href: '/favicon.svg',
+  },
+]
+const noscript: any = []
+
 export default defineApp({
   enhanceApp({ app }) {
     const pinia = createPinia()
@@ -33,6 +42,8 @@ export default defineApp({
         { property: 'author', content: site.author },
         { property: 'keywords', content: computed(() => frontmatter.tags) },
       ],
+      link,
+      noscript,
     }
   },
 })

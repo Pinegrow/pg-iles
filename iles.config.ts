@@ -6,9 +6,11 @@ import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
+import site from './src/site'
+const { url: siteUrl } = site
 
 export default defineConfig({
-  siteUrl: 'https://pg-iles.netlify.app',
+  siteUrl,
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
