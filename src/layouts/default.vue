@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <MetaTags client:load />
     <header>
       <img
         alt="Vue logo"
