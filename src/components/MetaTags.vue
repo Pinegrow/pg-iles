@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import site from '@/site'
-  const { title, description, url, image } = site
+  import image from '@/screenshots/image.jpg'
+  const { title, description, url } = site
 </script>
 
 <template>

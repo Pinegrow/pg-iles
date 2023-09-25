@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <MetaTags client:load />
+    <MetaTags />
     <slot />
   </div>
 </template>
