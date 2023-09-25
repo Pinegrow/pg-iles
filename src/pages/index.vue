@@ -1,5 +1,5 @@
 <page>
-    title: îles with Vue Designer
+    title: Home
 </page>
 <template>
   <main><span>A Fresh Start!</span></main>

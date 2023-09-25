@@ -1,9 +1,11 @@
 <template>
   <div class="layout">
-    <MetaTags />
+    <header>
+      <MetaTags />
+    </header>
     <slot />
   </div>
 </template>
 <style>
-  @import '~/assets/base.css';
+  @import '~/assets/css/base.css';
 </style>
