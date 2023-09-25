@@ -53,8 +53,5 @@
     "vite-plugin-vue-devtools": "^0.0.22",
     "vue-tsc": "^1.6.4"
   },
-  "overrides": {
-    "vue": "latest"
-  },
   "web-types": "web-types.json"
 }
