@@ -42,8 +42,8 @@ export default defineApp({
         { property: 'author', content: site.author },
         { property: 'keywords', content: computed(() => frontmatter.tags) },
       ],
-      // link,
-      // noscript,
+      link,
+      noscript,
     }
   },
 })
