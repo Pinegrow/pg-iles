@@ -9,14 +9,15 @@
   "scripts": {
     "dev": "iles dev",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --site https://pg-iles-css.netlify.app",
+    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-iles-css.netlify.app",
     "build": "iles build",
     "preview": "iles preview --open --port 5050",
     "type-check": "vue-tsc --noEmit",
     "vue-devtools": "vue-devtools",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write . '!public'"
+    "format": "prettier --write . !public"
   },
   "engines": {
     "node": "^14.18 || >= 16.0.0"

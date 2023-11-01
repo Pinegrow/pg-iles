@@ -1,9 +1,11 @@
 <template>
   <div class="layout">
     <header>
-      <MetaTags />
+      <HeadAndMeta />
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 <style>
