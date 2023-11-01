@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header>
-      <MetaTags />
+      <HeadAndMeta />
       <img
         alt="Vue logo"
         class="logo"
@@ -17,7 +17,9 @@
         </div>
       </div>
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 <style>

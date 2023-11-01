@@ -2,7 +2,7 @@
     title: Home
 </page>
 <template>
-  <main>
+  <div>
     <TheWelcome />
-  </main>
+  </div>
 </template>

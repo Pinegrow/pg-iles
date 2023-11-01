@@ -5,7 +5,7 @@
     </template>
     <template #heading> Documentation </template>
     îles’s
-    <a target="_blank" href="https://iles-docs.netlify.app/">documentation</a>
+    <a target="_blank" href="https://iles-docs.netlify.app">documentation</a>
     is in progress, but it should provide enough info to get started.
   </WelcomeItem>
   <WelcomeItem>
