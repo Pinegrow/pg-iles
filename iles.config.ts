@@ -107,6 +107,11 @@ export default defineConfig({
             prefix: 'i-', // default prefix, do not change
           }),
         ],
+        content: {
+          pipeline: {
+            include: ['./src/**/*'],
+          },
+        },
       }),
       // VueDevTools(),
     ],
