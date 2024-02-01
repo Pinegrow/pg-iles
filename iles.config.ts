@@ -7,6 +7,8 @@ import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 
+// import { visualizer } from 'rollup-plugin-visualizer'
+
 import site from './src/site'
 const { url: siteUrl } = site
 
@@ -115,6 +117,14 @@ export default defineConfig({
       }),
       // VueDevTools(),
     ],
+
+    // build: {
+    //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage
+    //   rollupOptions: {
+    //     plugins: [visualizer()],
+    //   },
+    // },
+
     resolve: {
       alias: {
         /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
