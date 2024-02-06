@@ -55,5 +55,11 @@
     "vite-plugin-vue-devtools": "^0.0.22",
     "vue-tsc": "^1.6.4"
   },
-  "web-types": "web-types.json"
+  "web-types": "web-types.json",
+  "pnpm": {
+    "overrides": {
+      "vue": "3.3",
+      "vite": "4.4"
+    }
+  }
 }
