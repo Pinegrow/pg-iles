@@ -1,0 +1,66 @@
+{
+  "name": "pg-iles",
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://pg-iles-css.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinegrow/pg-iles.git"
+  },
+  "scripts": {
+    "dev": "iles dev",
+    "now": "npm run build && npm run preview",
+    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-iles-css.netlify.app",
+    "build": "iles build",
+    "preview": "iles preview --open --port 5050",
+    "type-check": "vue-tsc --noEmit",
+    "vue-devtools": "vue-devtools",
+    "lint": "npm run lint:fix && npm run format",
+    "lint:fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
+  },
+  "engines": {
+    "node": "^14.18 || >= 16.0.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.1.2",
+    "@vueuse/head": "^1.1.26",
+    "defu": "^6.1.2",
+    "pinia": "^2.0.35",
+    "vee-validate": "^4.11.6"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.64",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@pinegrow/iles-module": "^3.0.56",
+    "@preact/preset-vite": "^2.5.0",
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@types/node": "^20.5.0",
+    "@unocss/preset-icons": "^0.57.2",
+    "@vue/devtools": "^6.5.0",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.6.0",
+    "iles": "0.9.5",
+    "npm-run-all": "^4.1.5",
+    "ofetch": "^1.0.1",
+    "preact": "^10.15.1",
+    "preact-render-to-string": "^6.1.0",
+    "prettier": "^2.8.8",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "solid-js": "^1.7.6",
+    "svelte": "^4.0.0",
+    "typescript": "~5.0.4",
+    "unocss": "^0.57.2",
+    "unplugin-auto-import": "^0.16.6",
+    "vite-plugin-vue-devtools": "^0.0.22",
+    "vue-tsc": "^1.6.4"
+  },
+  "web-types": "web-types.json",
+  "pnpm": {
+    "overrides": {
+      "vue": "3.3",
+      "vite": "4.4"
+    }
+  }
+}
