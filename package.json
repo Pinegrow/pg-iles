@@ -1,7 +1,6 @@
 {
   "name": "pg-iles",
   "version": "0.0.0",
-  "type": "module",
   "homepage": "https://pg-iles-css.netlify.app",
   "repository": {
     "type": "git",
