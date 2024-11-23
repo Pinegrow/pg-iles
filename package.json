@@ -55,6 +55,10 @@
     "vue-tsc": "^1.6.4"
   },
   "web-types": "web-types.json",
+  "overrides": {
+    "vue": "3.3",
+    "vite": "4.4"
+  },
   "pnpm": {
     "overrides": {
       "vue": "3.3",
