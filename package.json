@@ -23,7 +23,6 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "dependencies": {
-    "@unhead/vue": "^1.11.13",
     "@vueuse/core": "^10.1.2",
     "defu": "^6.1.2",
     "pinia": "^2.0.35",
