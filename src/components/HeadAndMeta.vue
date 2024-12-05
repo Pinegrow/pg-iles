@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  import { useSeoMeta } from 'unhead'
-
   // import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
   // import type { Script } from '@unhead/schema'
 
@@ -42,7 +40,7 @@
   const { title, description, url, author } = siteDefn
 
   const { frontmatter, site } = usePage()
-  const imgUrl = $computed(() => `${site.url}${image}`)
+  const imgUrl = computed(() => `${site.url}${image}`)
 
   useSeoMeta({
     // charset: 'utf-8',
@@ -54,7 +52,7 @@
     ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    ogImage: imgUrl,
+    ogImage: imgUrl.value,
     ogImageAlt: title,
     // og:image:width
     // og:image:height
@@ -67,7 +65,7 @@
     // og: type
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: imgUrl,
+    twitterImage: imgUrl.value,
     twitterImageAlt: title,
     twitterSite: '@vuedesigner',
     twitterCreator: '@techakayy',
@@ -87,7 +85,7 @@
         content: 'width=device-width, initial-scale=1',
       },
       { name: 'author', content: author },
-      { name: 'keywords', content: computed(() => frontmatter.tags) },
+      { name: 'keywords', content: computed(() => frontmatter.tags).value },
     ],
     // script: [{innerHTML: checkDarkTheme, once: true} as TurboScript],
     link,
