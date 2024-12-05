@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import { usePage, useRoute } from 'iles'
 
-export const useNav = () => {
+export const useNavMenu = () => {
   const { site } = usePage()
   const navlinksFromConfig = site.nav
   const navlinks = computed(() => navlinksFromConfig)
@@ -19,7 +19,7 @@ export const useNav = () => {
 
 export const isCurrentRoute = (navlink, currentPath) => {
   if (!currentPath) {
-    currentPath = useNav().currentPath.value
+    currentPath = useNavMenu().currentPath.value
   }
   return navlink.link === '/'
     ? currentPath === navlink.link
