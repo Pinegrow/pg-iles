@@ -100,6 +100,7 @@ export default defineConfig({
           /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
           'src/composables',
           'src/stores',
+          '**/pg-*/**', // To auto-import composables from Vue Designer plugins.
         ],
         vueTemplate: true,
         dts: 'auto-imports.d.ts',
