@@ -1,27 +1,21 @@
-import { computed } from 'vue'
-import { usePage, useRoute } from 'iles'
+import siteMeta from '@/site'
+import { useBrowserLocation } from '@vueuse/core'
 
 export const useNavMenu = () => {
-  const { site } = usePage()
-  const navlinksFromConfig = site.nav
-  const navlinks = computed(() => navlinksFromConfig)
+  const navs = siteMeta.navs
 
-  const currentRoute = useRoute()
+  const allNavs = Object.values(navs).reduce((acc, navMenu) => {
+    return [...acc, ...navMenu]
+  }, [])
+
   const currentPath = computed(() => {
-    return currentRoute.path
+    return useBrowserLocation().value.pathname
   })
 
   return {
-    navlinks,
+    allNavs,
+    navsPrimary: navs.primary,
+    navsSecondary: navs.secondary,
     currentPath,
   }
-}
-
-export const isCurrentRoute = (navlink, currentPath) => {
-  if (!currentPath) {
-    currentPath = useNavMenu().currentPath.value
-  }
-  return navlink.link === '/'
-    ? currentPath === navlink.link
-    : currentPath.startsWith(navlink.link)
 }

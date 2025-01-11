@@ -1,7 +1,10 @@
+<script setup lang="ts">
+  useHeadAndMeta()
+</script>
+
 <template>
   <div class="layout">
     <header>
-      <HeadAndMeta />
       <img
         alt="Vue logo"
         class="logo"
