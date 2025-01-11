@@ -8,7 +8,7 @@ export default {
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pg-iles-css.netlify.app',
-  github: 'https://github.com/pinegrow/natures-delight-with-iles-tailwindcss',
+  github: 'https://github.com/pinegrow/pg-iles',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
