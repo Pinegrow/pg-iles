@@ -53,5 +53,13 @@
     "vite-plugin-vue-devtools": "^7.7.0",
     "vue-tsc": "^2.2.0"
   },
+  "overrides": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sveltejs/vite-plugin-svelte": "^4.0.4"
+    }
+  },
   "web-types": "web-types.json"
 }
