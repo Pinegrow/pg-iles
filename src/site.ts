@@ -20,7 +20,19 @@ export default {
   titleSeparator: '|', // default
 
   navs: {
-    primary: [{ title: 'Home', icon: 'i-mdi-home', to: '/' }],
-    secondary: [{ title: 'About', icon: 'i-mdi-home', to: '/about' }],
+    primary: [
+      {
+        title: 'Home',
+        icon: 'i-mdi-home',
+        to: '/',
+      },
+    ],
+    secondary: [
+      // {
+      //   title: 'About',
+      //   icon: 'i-mdi-home',
+      //   to: '/about',
+      // },
+    ],
   },
 }
