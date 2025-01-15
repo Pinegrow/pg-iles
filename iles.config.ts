@@ -10,8 +10,8 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
-import site from './src/site'
-const { url: siteUrl } = site
+import siteMeta from './src/site'
+const { url: siteUrl } = siteMeta
 
 export default defineConfig({
   siteUrl,
