@@ -31,7 +31,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.294",
     "@nuxt/eslint-config": "^0.7.5",
-    "@pinegrow/iles-module": "3.0.74",
+    "@pinegrow/iles-module": "3.0.75",
     "@preact/preset-vite": "^2.9.4",
     "@sveltejs/vite-plugin-svelte": "^4.0.4",
     "@types/node": "^22.10.6",
